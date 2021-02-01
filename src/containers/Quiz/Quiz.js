@@ -75,6 +75,10 @@ class Quiz extends Component {
       answerState: null,
     });
   };
+  componentDidMount() {
+    console.log(this.props.match.params.id);
+  }
+
   render() {
     return (
       <div className={styles.Quiz}>
