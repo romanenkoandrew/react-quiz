@@ -1,13 +1,15 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
+import Layout from "./hoc/Layout/Layout";
+import Quiz from "./containers/Quiz/Quiz";
 
 class App extends Component {
-    render() {
-        return (
-            <div>
-                <h1>React quiz</h1>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <Layout>
+        <Quiz />
+      </Layout>
+    );
+  }
 }
 
 App.propTypes = {};
