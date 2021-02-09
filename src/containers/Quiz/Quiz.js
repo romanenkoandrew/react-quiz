@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import styles from "./Quiz.module.css";
 import ActiveQuiz from "../../components/ActiveQuiz/ActiveQuiz";
 import FinishedQuiz from "../../components/FinishedQuiz/FinishedQuiz";
+import axios from "axios";
+import { BASE_URL } from "../../Constants/Constants";
+import Loader from "../../components/UI/Loader/Loader";
 
 class Quiz extends Component {
   state = {
@@ -9,30 +12,8 @@ class Quiz extends Component {
     isFinished: false,
     activeQuestion: 0,
     answerState: null,
-    quiz: [
-      {
-        id: 1,
-        question: "Test",
-        rightAnswerId: 2,
-        answers: [
-          { text: "вопрос 1", id: 1 },
-          { text: "вопрос 2", id: 2 },
-          { text: "вопрос 3", id: 3 },
-          { text: "вопрос 4", id: 4 },
-        ],
-      },
-      {
-        id: 2,
-        question: "Test2",
-        rightAnswerId: 3,
-        answers: [
-          { text: "вопрос 1", id: 1 },
-          { text: "вопрос 2", id: 2 },
-          { text: "вопрос 3", id: 3 },
-          { text: "вопрос 4", id: 4 },
-        ],
-      },
-    ],
+    quiz: [],
+    loading: true,
   };
   onAnswerClickHandler = (answerId) => {
     if (this.state.answerState) {
@@ -75,8 +56,16 @@ class Quiz extends Component {
       answerState: null,
     });
   };
-  componentDidMount() {
-    console.log(this.props.match.params.id);
+  async componentDidMount() {
+    try {
+      const response = await axios.get(
+        `${BASE_URL}quizes/${this.props.match.params.id}.json`
+      );
+      const quiz = response.data;
+      this.setState({ quiz, loading: false });
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   render() {
@@ -84,7 +73,9 @@ class Quiz extends Component {
       <div className={styles.Quiz}>
         <div className={styles.QuizWrapper}>
           <h1>Ответьте на все вопросы</h1>
-          {this.state.isFinished ? (
+          {this.state.loading ? (
+            <Loader />
+          ) : this.state.isFinished ? (
             <FinishedQuiz
               results={this.state.results}
               quiz={this.state.quiz}
