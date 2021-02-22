@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Auth component Auth component 1`] = `
+<div
+  className="Auth"
+>
+  <div>
+    <h1>
+      Авторизация
+    </h1>
+    <form
+      action=""
+      className="AuthForm"
+      onSubmit={[Function]}
+    >
+      <Input
+        errorMessage="Введите корректный email"
+        key="email0"
+        label="Email"
+        onChange={[Function]}
+        shouldValidate={true}
+        touched={false}
+        type="email"
+        valid={false}
+        value=""
+      />
+      <Input
+        errorMessage="Введите корректный пароль"
+        key="password1"
+        label="Пароль"
+        onChange={[Function]}
+        shouldValidate={true}
+        touched={false}
+        type="password"
+        valid={false}
+        value=""
+      />
+      <Button
+        disabled={true}
+        onClick={[Function]}
+        type="success"
+      >
+        Войти
+      </Button>
+      <Button
+        disabled={true}
+        onClick={[Function]}
+        type="primary"
+      >
+        Зарегистрироваться
+      </Button>
+    </form>
+  </div>
+</div>
+`;

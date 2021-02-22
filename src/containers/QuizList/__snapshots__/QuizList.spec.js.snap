@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuizList component should render QuizList with quizes 1`] = `
+<div
+  className="QuizList"
+>
+  <div>
+    <h1>
+      Список тестов
+    </h1>
+    <ul>
+      <li
+        key="1"
+      >
+        <NavLink
+          to="/quiz/1"
+        >
+          name
+        </NavLink>
+      </li>
+      <li
+        key="2"
+      >
+        <NavLink
+          to="/quiz/2"
+        >
+          name2
+        </NavLink>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`QuizList component should render QuizList with quizes and with loading 1`] = `
+<div
+  className="QuizList"
+>
+  <div>
+    <h1>
+      Список тестов
+    </h1>
+    <Loader />
+  </div>
+</div>
+`;
+
+exports[`QuizList component should render QuizList without quizes 1`] = `
+<div
+  className="QuizList"
+>
+  <div>
+    <h1>
+      Список тестов
+    </h1>
+    <ul />
+  </div>
+</div>
+`;

@@ -6,7 +6,7 @@ import Input from "../../components/UI/Input/Input";
 import { connect } from "react-redux";
 import { auth } from "../../store/actions/auth";
 
-class Auth extends Component {
+export class Auth extends Component {
   state = {
     isFormValid: false,
     formControls: {

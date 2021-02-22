@@ -4,7 +4,7 @@ import MenuToggle from "../../components/Navigation/MenuToggle/MenuToggle";
 import Drawer from "../../components/Navigation/Drawer/Drawer";
 import { connect } from "react-redux";
 
-class Layout extends Component {
+export class Layout extends Component {
   state = { menu: false };
   onToggle = () => {
     this.setState({ menu: !this.state.menu });

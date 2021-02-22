@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Backdrop component should render Backdrop with props.isOpen 1`] = `
+<div
+  className="Backdrop"
+/>
+`;
+
+exports[`Button component should render Button 1`] = `
+<button
+  className="Button undefined"
+/>
+`;
+
+exports[`Input component should render Input without props.type 1`] = `
+<div
+  className="Input invalid"
+>
+  <label
+    htmlFor="text--0.21030961908189472"
+  />
+  <input
+    id="text--0.21030961908189472"
+    type="text"
+    value="value"
+  />
+  <span>
+    Введите верное значение
+  </span>
+</div>
+`;
+
+exports[`Input component should render default Input 1`] = `
+<div
+  className="Input"
+>
+  <label
+    htmlFor="type--0.7813774796250152"
+  />
+  <input
+    id="type--0.7813774796250152"
+    type="type"
+    value="value"
+  />
+</div>
+`;
+
+exports[`Loader component should render Loader 1`] = `
+<div
+  className="ldsRoller"
+>
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+</div>
+`;
+
+exports[`Select component should render Select 1`] = `
+<div
+  className="Select"
+>
+  <label
+    htmlFor="undefined-0.05517909705267399"
+  />
+  <select
+    id="undefined-0.05517909705267399"
+  >
+    <option
+      key="value 0"
+      value="value "
+    >
+      text
+    </option>
+  </select>
+</div>
+`;

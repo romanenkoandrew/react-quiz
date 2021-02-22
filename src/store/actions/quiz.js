@@ -13,7 +13,7 @@ export function fetchQuizes() {
       });
       dispatch(fetchQuizesSuccess(quizes));
     } catch (e) {
-      dispatch(fetchQuizesError(e));
+      dispatch(fetchQuizesError(e.response.data));
     }
   };
 }
@@ -26,7 +26,7 @@ export function fetchQuizById(id) {
       const quiz = response.data;
       dispatch(fetchQuizByIdSuccess(quiz));
     } catch (e) {
-      dispatch(fetchQuizesError(e));
+      dispatch(fetchQuizesError(e.response.data));
     }
   };
 }

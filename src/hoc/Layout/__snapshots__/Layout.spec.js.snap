@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout component should render Layout 1`] = `
+<div
+  className="Layout"
+>
+  <Drawer
+    isOpen={false}
+    onClose={[Function]}
+  />
+  <MenuToggle
+    isOpen={false}
+    onToggle={[Function]}
+  />
+  <main>
+    <div>
+      Test
+    </div>
+  </main>
+</div>
+`;

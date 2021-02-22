@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quiz component should render Quiz with isFinished true 1`] = `
+<div
+  className="Quiz"
+>
+  <div
+    className="QuizWrapper"
+  >
+    <h1>
+      Ответьте на все вопросы
+    </h1>
+    <FinishedQuiz
+      onRetry={[MockFunction]}
+      quiz={
+        Array [
+          Object {
+            "answers": "answers",
+            "question": "question",
+          },
+        ]
+      }
+      results={Array []}
+    />
+  </div>
+</div>
+`;
+
+exports[`Quiz component should render Quiz with loading true 1`] = `
+<div
+  className="Quiz"
+>
+  <div
+    className="QuizWrapper"
+  >
+    <h1>
+      Ответьте на все вопросы
+    </h1>
+    <Loader />
+  </div>
+</div>
+`;
+
+exports[`Quiz component should render Quiz with props 1`] = `
+<div
+  className="Quiz"
+>
+  <div
+    className="QuizWrapper"
+  >
+    <h1>
+      Ответьте на все вопросы
+    </h1>
+    <ActiveQuiz
+      answerNumber={1}
+      answers="answers"
+      onAnswerClick={[MockFunction]}
+      question="question"
+      quizLength={1}
+      state={
+        Object {
+          "state": "state",
+        }
+      }
+    />
+  </div>
+</div>
+`;

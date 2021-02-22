@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Drawer component should render Drawer with props 1`] = `
+<Fragment>
+  <nav
+    className="Drawer"
+  >
+    <ul>
+      <li
+        key="0"
+      >
+        <NavLink
+          activeClassName="active"
+          exact={true}
+          to="/"
+        >
+          Список
+        </NavLink>
+      </li>
+      <li
+        key="1"
+      >
+        <NavLink
+          activeClassName="active"
+          exact={false}
+          to="/quiz-creator"
+        >
+          Создать тест
+        </NavLink>
+      </li>
+      <li
+        key="2"
+      >
+        <NavLink
+          activeClassName="active"
+          exact={false}
+          to="/logout"
+        >
+          Выйти
+        </NavLink>
+      </li>
+    </ul>
+  </nav>
+  <Backdrop />
+</Fragment>
+`;
+
+exports[`Drawer component should render Drawer without props 1`] = `
+<Fragment>
+  <nav
+    className="Drawer close"
+  >
+    <ul>
+      <li
+        key="0"
+      >
+        <NavLink
+          activeClassName="active"
+          exact={true}
+          to="/"
+        >
+          Список
+        </NavLink>
+      </li>
+      <li
+        key="1"
+      >
+        <NavLink
+          activeClassName="active"
+          exact={false}
+          to="/auth"
+        >
+          Авторизация
+        </NavLink>
+      </li>
+    </ul>
+  </nav>
+</Fragment>
+`;

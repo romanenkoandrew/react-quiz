@@ -1,6 +1,6 @@
 import { ActionTypes } from "../actions/ActionTypes";
 
-const initialState = {
+export const initialState = {
   token: null,
 };
 

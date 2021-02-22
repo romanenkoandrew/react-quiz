@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnswerItem component should render AnswerItem with props.state 1`] = `
+<li
+  className="AnswerItem true"
+  onClick={[Function]}
+>
+  test
+</li>
+`;
+
+exports[`AnswerItem component should render AnswerItem without props.state 1`] = `
+<li
+  className="AnswerItem"
+  onClick={[Function]}
+>
+  test
+</li>
+`;

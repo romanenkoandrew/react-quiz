@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 import { logout } from "../../store/actions/auth";
 
-class Logout extends React.Component {
+export class Logout extends React.Component {
   componentWillUnmount() {
     this.props.logout();
   }
@@ -12,7 +12,7 @@ class Logout extends React.Component {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
+export const mapDispatchToProps = (dispatch) => {
   return {
     logout: () => dispatch(logout()),
   };

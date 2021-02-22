@@ -7,7 +7,7 @@ import { BASE_URL } from "../../Constants/Constants";
 import { connect } from "react-redux";
 import { fetchQuizes } from "../../store/actions/quiz";
 
-class QuizList extends Component {
+export class QuizList extends Component {
   renderQuizes() {
     return this.props.quizes.map((quiz) => {
       return (

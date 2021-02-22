@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActiveQuiz component should render ActiveQuiz with props.state 1`] = `
+<div
+  className="ActiveQuiz"
+>
+  <p
+    className="Question"
+  >
+    <span>
+      <strong>
+        1
+      </strong>
+         
+      question
+    </span>
+    <small>
+      1
+       из 
+      3
+    </small>
+  </p>
+  <AnswerList
+    answers={
+      Array [
+        Object {
+          "answer": Object {
+            "id": "test",
+            "text": "test",
+          },
+        },
+      ]
+    }
+    state={true}
+  />
+</div>
+`;

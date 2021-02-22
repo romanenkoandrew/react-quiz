@@ -9,8 +9,6 @@ import {
 import Input from "../../components/UI/Input/Input";
 import Auxiliary from "../../hoc/Auxiliary/Auxiliary";
 import Select from "../../components/UI/Select/Select";
-import axios from "axios";
-import { BASE_URL } from "../../Constants/Constants";
 import { connect } from "react-redux";
 import {
   createQuizQuestion,
@@ -44,7 +42,7 @@ function createFormControls() {
   };
 }
 
-class QuizCreator extends Component {
+export class QuizCreator extends Component {
   state = {
     isFormValid: false,
     rightAnswerId: 1,

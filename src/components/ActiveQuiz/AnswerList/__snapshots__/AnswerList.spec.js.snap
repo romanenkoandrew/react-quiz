@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnswerList component should render AnswerList with props.state 1`] = `
+<ul
+  className="AnswerList"
+>
+  <AnswerItem
+    answer={
+      Object {
+        "answer": Object {
+          "id": "test",
+          "text": "test",
+        },
+      }
+    }
+    key="0"
+  />
+</ul>
+`;
+
+exports[`AnswerList component should render AnswerList without props.state 1`] = `
+<ul
+  className="AnswerList"
+>
+  <AnswerItem
+    answer={
+      Object {
+        "answer": Object {
+          "id": "test",
+          "text": "test",
+        },
+      }
+    }
+    key="0"
+    state={null}
+  />
+</ul>
+`;
